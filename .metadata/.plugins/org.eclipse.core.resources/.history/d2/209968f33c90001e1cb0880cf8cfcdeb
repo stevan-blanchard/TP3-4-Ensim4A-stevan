@@ -1,0 +1,18 @@
+package TP1.Stevan.TP3.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import TP1.Stevan.TP3.controller.Geometry;
+
+class Features{
+	private List<Geometry> geometries = new ArrayList<Geometry>();
+
+	public Geometry getGeometries() {
+		return geometries.get(0);
+	}
+
+	public void setGeometries(List<Geometry> geometries) {
+		this.geometries = geometries;
+	}
+}

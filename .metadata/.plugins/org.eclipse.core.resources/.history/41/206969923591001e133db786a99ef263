@@ -1,0 +1,23 @@
+package TP1.Stevan.TP3.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Forecast {
+	private List<Item> item = new ArrayList<>();
+
+	public Item getItem() {
+		return item.get(0);
+	}
+
+	public void setItem(List<Item> item) {
+		this.item = item;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return ""+item.size();
+	}
+
+}

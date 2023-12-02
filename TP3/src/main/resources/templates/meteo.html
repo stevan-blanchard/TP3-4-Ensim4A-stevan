@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Metéo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+	<header th:insert="fragments/navbar.html"> </header>
+
+<body>
+    <div class="container">
+		<p th:text="'ville : ' + ${ville}" ></p>
+		<p th:text="'temps : ' + ${temps}" ></p>
+		<p th:text="'temperature minimal : ' + ${tempmin} + '°C'" ></p>
+		<p th:text="'temperature maximal : ' + ${tempmax} + '°C'" ></p>
+		<p th:text="'probabilité pluie : ' + ${probpluie}+ '%'" ></p>
+		<p th:text="'probabilité gel : ' + ${probgel} + '%'" ></p>
+	</div>
+</body>

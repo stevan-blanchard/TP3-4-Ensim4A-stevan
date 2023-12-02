@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Gretting</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+	<header th:insert="fragments/navbar.html"> </header>
+
+	<body>
+		<p th:text="'Bonjour ' + ${nomTemplate} + ' !'" />
+	</body>
+</html>

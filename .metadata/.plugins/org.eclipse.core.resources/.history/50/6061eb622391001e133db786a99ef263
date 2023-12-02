@@ -1,0 +1,15 @@
+package TP1.Stevan.TP3.model;
+
+public class MeteoConceptReponse {
+	private City city;
+	private Forecast forecast;
+
+	public Forecast getForecast() {
+		return forecast;
+	}
+
+	public void setForecast(Forecast forecast) {
+		this.forecast = forecast;
+	} 
+
+}
